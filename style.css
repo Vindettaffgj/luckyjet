@@ -1,0 +1,94 @@
+body {
+  background-image: url(./font.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+#responseText {
+  align-items: center;
+  text-align: center;
+  font-size: 200px;
+  margin-top: 550px;
+  border-radius: 2px; 
+}
+
+#luckyJetIcon {
+  width: 3px;
+  height: 3px;
+  animation: wiggle 3s linear infinite;
+}
+
+#luckyJetIcon.flying {
+  border-radius: 2px; 
+  height: 300px;
+  width: 300px;
+}
+
+#luckyJetIcon.ending {
+  border-radius: 2px; 
+  height: 300px;
+  width: 300px;
+}
+
+#endingText {
+  font-size: 150px;  
+  margin-top: 10px; 
+  display: none;  
+  font-family: 'Intro', sans-serif;  
+  color: white;
+  animation: blink 0.2s linear infinite; 
+}
+
+#endingText.show {
+  display: block; 
+}
+
+#waitingText {
+  font-size: 150px;  
+  margin-top: 10px; 
+  display: none;  
+  font-family: 'Intro', sans-serif; 
+  color: white;
+}
+
+#waitingText.show {
+  display: block; 
+}
+
+#pluggText {
+  font-size: 150px; 
+  margin-top: 620px; 
+  display: block;  
+  font-family: 'Intro', sans-serif;  
+  animation: glow 3s linear infinite;
+}
+
+@keyframes glow {
+  0% { color: #8000ff; } 
+  50% { color: white; }
+  100% { color: #8000ff; } 
+}
+
+@keyframes wiggle {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(30px, -30px); }
+  50% { transform: translate(-20px, 30px); }
+  75% { transform: translate(30px, -30px); }
+  100% { transform: translate(0, 0); }
+}
+
+@font-face {
+  font-family: 'Intro';
+  src: url('./images/intro.otf'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
