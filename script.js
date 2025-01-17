@@ -49,4 +49,4 @@ async function checkSignal() {
   } 
 }
 
-setInterval(checkSignal, 1000); // Проверяйте состояние каждые 1 секунду
+setInterval(checkSignal, 250); // Проверяйте состояние каждые 1 секунду
